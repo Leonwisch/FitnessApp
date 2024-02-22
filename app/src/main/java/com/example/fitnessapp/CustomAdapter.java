@@ -16,12 +16,13 @@ import java.util.ArrayList;
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
     private Context context;
-    private ArrayList fitness_date;
+    private ArrayList fitness_id, fitness_date;
 
 
-    CustomAdapter(Context context, ArrayList fitness_date){
+    CustomAdapter(Context context, ArrayList fitness_date, ArrayList fitness_id){
         this.context = context;
         this.fitness_date = fitness_date;
+        this.fitness_id = fitness_id;
     }
 
     @NonNull

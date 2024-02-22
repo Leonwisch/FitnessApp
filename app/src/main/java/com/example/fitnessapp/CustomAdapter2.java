@@ -12,12 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class CustomAdapter2 extends RecyclerView.Adapter<CustomAdapter2.MyViewHolder> {
-
     private Context context;
-    private ArrayList uebung_name, uebung_weight;
+    private ArrayList uebung_id, uebung_name, uebung_weight;
 
-    CustomAdapter2(Context context , ArrayList uebung_name, ArrayList uebung_weight){
+    CustomAdapter2(Context context , ArrayList uebung_id, ArrayList uebung_name, ArrayList uebung_weight){
         this.context = context;
+        this.uebung_id = uebung_id;
         this.uebung_name = uebung_name;
         this.uebung_weight = uebung_weight;
     }

@@ -14,7 +14,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity{
 
     RecyclerView recyclerView2;
     FloatingActionButton add_button2;
@@ -45,13 +45,13 @@ public class MainActivity2 extends AppCompatActivity {
 
         storeDataInArrays2();
 
-        customAdapter2 = new CustomAdapter2(MainActivity2.this, uebung_name, uebung_weight);
+        customAdapter2 = new CustomAdapter2(MainActivity2.this, uebung_id, uebung_name, uebung_weight);
         recyclerView2.setAdapter(customAdapter2);
         recyclerView2.setLayoutManager(new LinearLayoutManager(MainActivity2.this));
     }
 
     void storeDataInArrays2(){
-        Cursor cursor2 = myDB2.readAllDataUebung();
+        Cursor cursor2 = myDB2.readUebung();
         if (cursor2.getCount() == 0){
             Toast.makeText(this, "Keine Daten.", Toast.LENGTH_SHORT).show();
         }else {

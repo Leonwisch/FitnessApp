@@ -15,11 +15,11 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "FITNESSAPP.db";
     private static final int DATABASE_VERSION = 1;
 
-    private static final String TABLE_NAME = "my_library";
+    private static final String TABLE_NAME = "training_library";
     private static final String COLUMN_ID = "_id";
     private static final String COLUMN_Date = "date";
 
-    private static final String TABLE_NAME2 = "my_library2";
+    private static final String TABLE_NAME2 = "uebung_library";
     private static final String COLUMN_uebung_id = "uebung_id";
     private static final String COLUMN_uebung_name = "uebung_name";
     private static final String COLUMN_uebung_weight = "uebung_weight";
@@ -89,7 +89,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    Cursor readAllDataUebung(){
+    Cursor readUebung(){
         String query2 = "SELECT * FROM " + TABLE_NAME2;
         SQLiteDatabase db2 = this.getReadableDatabase();
 
@@ -98,5 +98,12 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             cursor = db2.rawQuery(query2, null);
         }
         return cursor;
+    }
+
+    void deleteAllData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME, null, null);
+        db.delete(TABLE_NAME2, null, null);
+        Toast.makeText(context, "Alle Daten gelöscht!", Toast.LENGTH_SHORT).show();
     }
 }

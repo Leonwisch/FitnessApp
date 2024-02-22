@@ -19,6 +19,7 @@
             android:parentActivityName=".MainActivity2"/>
         <activity
             android:name=".MainActivity2"
+            android:label="Meine Übungen"
             android:exported="false" />
         <activity
             android:name=".AddActivity"
