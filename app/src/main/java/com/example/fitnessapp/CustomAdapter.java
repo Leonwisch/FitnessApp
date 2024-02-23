@@ -13,6 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+/*
+Author: Leon Fässler
+Date: 23.02.2024
+Description: This is a Fitness App where you can put in your training data. 
+*/
+
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
     private Context context;
