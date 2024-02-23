@@ -9,6 +9,12 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+/*
+Author: Leon Fässler
+Date: 23.02.2024
+Description: This is a Fitness App where you can put in your training data. 
+*/
+
 public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     private Context context;
