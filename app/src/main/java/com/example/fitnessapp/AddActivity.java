@@ -7,6 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/*
+Author: Leon Fässler
+Date: 23.02.2024
+Description: This is a Fitness App where you can put in your training data. 
+*/
+
 public class AddActivity extends AppCompatActivity {
 
     EditText date_input;
