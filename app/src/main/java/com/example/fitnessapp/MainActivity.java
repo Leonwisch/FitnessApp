@@ -18,6 +18,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
+/*
+Author: Leon Fässler
+Date: 23.02.2024
+Description: This is a Fitness App where you can put in your training data. 
+*/
+
 public class MainActivity extends AppCompatActivity{
 
     RecyclerView recyclerView;
